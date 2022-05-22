@@ -1,0 +1,192 @@
+00:00  INFO: Client commandline script started
+00:00  INFO: Connecting to localhost:61234
+00:00  INFO: Registering: foo
+00:00  INFO: Refresh requested
+00:00  INFO: 
+Black Score: 2
+White Score: 2
+Next player: black
+Board:
+ |01234567
+----------
+0|********
+1|********
+2|********
+3|***10***
+4|***01***
+5|********
+6|********
+7|********
+
+00:02  INFO: Player chose move: 23
+00:02  INFO: 
+Black Score: 3
+White Score: 3
+Next player: black
+Board:
+ |01234567
+----------
+0|********
+1|********
+2|**10****
+3|***10***
+4|***01***
+5|********
+6|********
+7|********
+
+00:02  INFO: Player chose move: 21
+00:02  INFO: 
+Black Score: 4
+White Score: 4
+Next player: black
+Board:
+ |01234567
+----------
+0|********
+1|*1******
+2|*010****
+3|***10***
+4|***01***
+5|********
+6|********
+7|********
+
+00:02  INFO: Player chose move: 01
+00:02  INFO: 
+Black Score: 5
+White Score: 5
+Next player: black
+Board:
+ |01234567
+----------
+0|10******
+1|*1******
+2|*010****
+3|***10***
+4|***01***
+5|********
+6|********
+7|********
+
+00:02  INFO: Player chose move: 32
+00:02  INFO: 
+Black Score: 6
+White Score: 6
+Next player: black
+Board:
+ |01234567
+----------
+0|111*****
+1|*1******
+2|*010****
+3|**000***
+4|***01***
+5|********
+6|********
+7|********
+
+00:02  INFO: Player chose move: 12
+00:02  INFO: 
+Black Score: 7
+White Score: 7
+Next player: black
+Board:
+ |01234567
+----------
+0|111*****
+1|*111****
+2|*000****
+3|**000***
+4|***01***
+5|********
+6|********
+7|********
+
+00:02  INFO: Player chose move: 03
+00:02  INFO: 
+Black Score: 9
+White Score: 7
+Next player: black
+Board:
+ |01234567
+----------
+0|11111***
+1|*100****
+2|*000****
+3|**000***
+4|***01***
+5|********
+6|********
+7|********
+
+00:02  INFO: Player chose move: 10
+00:02  INFO: 
+Black Score: 9
+White Score: 9
+Next player: black
+Board:
+ |01234567
+----------
+0|11111***
+1|1100****
+2|1000****
+3|**000***
+4|***01***
+5|********
+6|********
+7|********
+
+00:02  INFO: Player chose move: 45
+00:02  INFO: 
+Black Score: 9
+White Score: 11
+Next player: black
+Board:
+ |01234567
+----------
+0|11111***
+1|11111***
+2|1000****
+3|**000***
+4|***000**
+5|********
+6|********
+7|********
+
+00:02  INFO: Player chose move: 05
+00:02  INFO: 
+Black Score: 10
+White Score: 12
+Next player: black
+Board:
+ |01234567
+----------
+0|1111111*
+1|11110***
+2|1000****
+3|**000***
+4|***000**
+5|********
+6|********
+7|********
+
+00:02 ERROR: You can't pass here. Move is invalid. You lose.
+00:03  INFO: 
+Black Score: 10
+White Score: 12
+Next player: black
+Board:
+ |01234567
+----------
+0|1111111*
+1|11110***
+2|1000****
+3|**000***
+4|***000**
+5|********
+6|********
+7|********
+
+00:03  INFO: Player 0:  game terminated received
+00:03  INFO: You (player 1) lost!
