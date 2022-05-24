@@ -1,37 +1,3 @@
-/* vim: :se ai :se sw=4 :se ts=4 :se sts :se et */
-
-/*H**********************************************************************
- *
- *    This is a skeleton to guide development of Othello engines that can be used
- *    with the Ingenious Framework and a Tournament Engine. 
- *
- *    The communication with the referee is handled by an implementaiton of comms.h,
- *    All communication is performed at rank 0.
- *
- *    Board co-ordinates for moves start at the top left corner of the board i.e.
- *    if your engine wishes to place a piece at the top left corner, 
- *    the "gen_move_master" function must return "00".
- *
- *    The match is played by making alternating calls to each engine's 
- *    "gen_move_master" and "apply_opp_move" functions. 
- *    The progression of a match is as follows:
- *        1. Call gen_move_master for black player
- *        2. Call apply_opp_move for white player, providing the black player's move
- *        3. Call gen move for white player
- *        4. Call apply_opp_move for black player, providing the white player's move
- *        .
- *        .
- *        .
- *        N. A player makes the final move and "game_over" is called for both players
- *    
- *    IMPORTANT NOTE:
- *        Write any (debugging) output you would like to see to a file. 
- *        	- This can be done using file fp, and fprintf()
- *        	- Don't forget to flush the stream
- *        	- Write a method to make this easier
- *        In a multiprocessor version 
- *        	- each process should write debug info to its own file 
- *H***********************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -108,7 +74,6 @@ void run_master(int argc, char *argv[]) {
 		running = 1;
 	}
 	if (my_colour == EMPTY) my_colour = BLACK;
-	// Broadcast my_colour
 
 	while (running == 1) {
 		/* Receive next command from referee */
@@ -152,7 +117,6 @@ void run_master(int argc, char *argv[]) {
 		}
 		
 	}
-	// Broadcast running
 }
 
 int initialise_master(int argc, char *argv[], int *time_limit, int *my_colour, FILE **fp) {
@@ -195,35 +159,16 @@ void free_board() {
 	free(board);
 }
 
-/**
- *   Rank i (i != 0) executes this code 
- *   ----------------------------------
- *   Called at the start of execution on all ranks except for rank 0.
- *   - run_worker should play minimax from its move(s) 
- *   - results should be send to Rank 0 for final selection of a move 
- */
+
 void run_worker() {
 	int running = 0;
-	// Broadcast colour
-	// Broadcast running
 
 	while (running == 1) {
-		// Broadcast board
 
-		// Generate move        
-
-		// Broadcast running 
 	}
 }
 
-/**
- *  Rank 0 executes this code: 
- *  --------------------------
- *  Called when the next move should be generated 
- *  - gen_move_master should play minimax from its move(s)
- *  - the ranks may communicate during execution 
- *  - final results should be gathered at rank 0 for final selection of a move 
- */
+
 void gen_move_master(char *move, int my_colour, FILE *fp) {
 	int loc;
 
